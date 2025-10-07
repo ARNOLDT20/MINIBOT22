@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECH-MINI-BOT | Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #000, #031415);
+      color: #00ffe1;
+      font-family: 'Orbitron', sans-serif;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .card {
+      background: rgba(15, 15, 15, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 0 30px #00ffe133;
+      animation: glow 3s infinite alternate;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 20px #00ffe155; }
+      to { box-shadow: 0 0 40px #00ffe1aa; }
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .status {
+      font-size: 1.1em;
+      color: #0ff;
+      margin-bottom: 20px;
+    }
+    button {
+      background: linear-gradient(90deg, #00ffe1, #00ccff);
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffe1;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>TECH-MINI-BOT</h1>
+    <div class="status">✅ Connected & Running</div>
+    <p>Your bot is now active. You can close this page or keep it open to monitor.</p>
+    <button onclick="location.href='/pair'">Pair Another Number</button>
+  </div>
+</body>
+</html>
